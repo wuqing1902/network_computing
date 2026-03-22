@@ -1,4 +1,4 @@
-# Module 2: Programming Foundations for IoT
+# Module 2: Everything Becomes Programmable
 
 ## Section 2.1: Basic Programming Concepts
 
