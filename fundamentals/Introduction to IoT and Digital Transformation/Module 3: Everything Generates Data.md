@@ -1,4 +1,4 @@
-# Module 3: Big Data and Analytics
+# Module 3: Everything Generates Data
 
 ## Section 3.1: What is Big Data?
 
