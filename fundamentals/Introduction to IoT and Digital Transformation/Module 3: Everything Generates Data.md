@@ -73,7 +73,7 @@ Efficient data storage and processing are essential for managing Big Data. Lever
 
 Big Data plays a vital role in helping organizations make strategic and operational decisions. Businesses analyze data to extract meaningful insights that improve products, services, and overall performance. Data can be categorized as transactional (real-time operations) or analytical (long-term decision-making).
 
-Data is also classified as structured or unstructured, depending on its format. To collect and analyze this data, organizations use techniques such as web scraping and APIs. The process of identifying patterns and insights is known as data mining, and the results are communicated through data visualization (line chart, scatter plot, pie chart, bar chart).
+Data is also classified as structured or unstructured, depending on its format. To collect and analyze this data, organizations use techniques such as web scraping and APIs. The process of identifying patterns and insights is known as data mining, and the results are communicated through data visualization (e.g., line chart, scatter plot, pie chart, bar chart).
 
 ### Key Concepts
 
