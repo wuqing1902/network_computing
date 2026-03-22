@@ -35,7 +35,7 @@ Automation is a key driver of efficiency and safety in modern systems. Its integ
 
 ---
 
-## Section 4.2: Artificial Intelligence and Machine Learning
+## Section 4.2: Artificial Intelligence (AI) and Machine Learning (ML)
 
 Artificial Intelligence (AI) enables machines to simulate human intelligence, including learning, reasoning, and decision-making. Machine Learning (ML), a subset of AI, allows systems to learn from data and improve performance without explicit programming.
 
@@ -43,11 +43,11 @@ ML focuses on generalization, enabling systems to perform accurately on new and 
 
 ### Key Concepts
 
-- **Artificial Intelligence (AI)**
+- **Artificial Intelligence**
   - Mimics human cognitive functions  
   - Optimizes decision-making processes  
 
-- **Machine Learning (ML)**
+- **Machine Learning**
   - Learns patterns from data  
   - Improves performance over time  
 
