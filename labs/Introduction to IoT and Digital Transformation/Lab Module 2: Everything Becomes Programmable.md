@@ -49,7 +49,7 @@ This lab introduces Blockly programming within Cisco Packet Tracer to control Io
 
 ---
 
-## Lab 2.3.6 – Basic Python Programming
+## Lab 2 – Basic Python Programming
 ### Description
 This lab introduces Python programming fundamentals. Students practiced arithmetic operations, data types, string manipulation, variables, type conversion, and user input in an interactive Python environment (IDLE).
 ### Objective
@@ -84,7 +84,7 @@ This lab introduces Python programming fundamentals. Students practiced arithmet
 
 ---
 
-## Lab 2.3.7 – Create a Simple Game with Python IDLE (Integrated Development and Learning Environment)
+## Lab 3 – Create a Simple Game with Python IDLE (Integrated Development and Learning Environment)
 ### Description
 In this lab, students create a number-guessing game using Python IDLE. The game implements the bisection method to find a user-selected number, teaching logic, loops, conditional statements, and input validation.
 ### Objective
