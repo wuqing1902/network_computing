@@ -1,4 +1,4 @@
-# Module 8: The Internet Protocol
+# Lab Module 8: The Internet Protocol
 
 ## Overview
 This module focuses on understanding how devices communicate with web servers using IP addresses. Through a hands-on Packet Tracer lab, the activity demonstrates how packets are transmitted across a network and how connectivity is verified using basic networking tools.
