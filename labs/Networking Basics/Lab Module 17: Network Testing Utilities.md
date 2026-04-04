@@ -35,16 +35,14 @@ A small business office has four PCs on a static IP network (192.168.1.0/24). On
 
 ---
 
-### Technical Insights & Steps
+### Technical Insights
 1. **Verify configurations:**
-   - Accessed each PC’s Command Prompt
-   - Ran `ipconfig /all` to list IP configuration, subnet mask, default gateway, and DNS server
-   - Observed that **PC2** had IP address 192.168.10.X while the default gateway was 192.168.1.1.  
-     - **Insight:** The network portion of the IP does not match the gateway’s network. Even though the PC is physically connected, Layer 3 routing will fail because the PC thinks it is on a different subnet.
+   - Observed PC2 had IP 192.168.10.X, while the default gateway was 192.168.1.1
+   - **Insight:** Mismatch in the network portion prevents Layer 3 routing. Even if physical connectivity exists, the PC cannot communicate outside its perceived subnet
 
 2. **Correct misconfiguration:**
-   - Changed PC2 IP to 192.168.1.X, matching the subnet of the gateway and other PCs
-   - **Insight:** Correct subnet alignment ensures the PC can communicate with other hosts in the same network and reach the default gateway for external access.
+   - Updated PC2 IP to 192.168.1.X to align with the subnet of the gateway and other PCs
+   - **Insight:** Proper subnet alignment ensures Layer 3 connectivity to other hosts and the default gateway, allowing internet and intranet access
 
 ---
 
