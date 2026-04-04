@@ -1,5 +1,4 @@
-# Module 14: Routing Between Networks
-# Lab Module 14: Networking Basics
+# Lab Module 14: Routing Between Networks
 
 ## Overview
 This module focuses on improving network efficiency through routing and building a functional Local Area Network (LAN). The labs demonstrate how network segmentation reduces unnecessary traffic and how to design, configure, and verify a small office network.
