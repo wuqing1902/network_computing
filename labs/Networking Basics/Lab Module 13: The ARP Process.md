@@ -1,4 +1,4 @@
-# Module 13: The ARP Process
+# Lab Module 13: The ARP Process
 
 ## Overview
 This module focuses on understanding how data is transmitted across networks by examining both MAC (Layer 2) and IP (Layer 3) addressing. Using Packet Tracer simulation mode, the lab analyzes how Protocol Data Units (PDUs) travel between devices in both local and remote network communications.
