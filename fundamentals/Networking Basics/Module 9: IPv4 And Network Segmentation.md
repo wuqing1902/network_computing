@@ -1,4 +1,4 @@
-# Module 9: IPv4 Transmission Methods and Address TypesModule 9: IPv4 And Network Segmentation
+# Module 9: IPv4 And Network Segmentation
 
 ## Overview
 This module explores how IPv4 packets are transmitted across networks, including unicast, broadcast, and multicast methods. It also covers IPv4 address types—public, private, reserved—and the concept of network segmentation for improved performance and organization.
