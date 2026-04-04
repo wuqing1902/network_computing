@@ -41,29 +41,29 @@ This lab simulates setting up a home network for a user by connecting devices, c
 
 ### Key Tasks Performed
 
-#### 🔹 Network Setup
+#### Network Setup
 - Connected coaxial cables from ISP to cable modem and TV via splitter
 - Connected cable modem to wireless router (Internet port)
 - Connected wired devices (Office PC & Bedroom PC) using Ethernet cables
 
-#### 🔹 Router Configuration
+#### Router Configuration
 - Accessed router GUI via web browser using default gateway
 - Enabled DHCP for automatic IP assignment
 - Limited DHCP users to 10 devices
 - Changed default admin password for security
 
-#### 🔹 Wireless Network Setup
+#### Wireless Network Setup
 - Enabled 2.4 GHz wireless network
 - Configured SSID: **MyHome**
 - Set wireless security to **WPA2 Personal**
 - Configured passphrase authentication
 
-#### 🔹 Device Connectivity
+#### Device Connectivity
 - Connected laptop to wireless network using passphrase
 - Configured PCs to obtain IP addresses via DHCP
 - Verified all devices received valid IP addresses (192.x.x.x range)
 
-#### 🔹 Connectivity Testing
+#### Connectivity Testing
 - Tested internet access using web browser on all devices
 - Verified successful connection to external server (skillsforall.srv)
 
