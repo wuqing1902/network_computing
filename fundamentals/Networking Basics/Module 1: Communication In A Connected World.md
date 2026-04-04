@@ -5,6 +5,17 @@ This module introduces the foundational concepts of computer networking, focusin
 
 ---
 
+## Section 1.0: Introduction
+
+This section emphasizes the importance of networking in both everyday and high-risk environments. Using a healthcare scenario, it illustrates how devices such as laptops and medical equipment rely on stable network communication.
+
+In critical environments, network failures can disrupt operations and potentially endanger lives, making reliability a key requirement in network design.
+
+### What I Learned
+Networking is not just about connectivity—it is essential infrastructure that supports real-world systems where reliability and uptime are critical.
+
+---
+
 ## Section 1.1: Network Types
 
 Networks are described as a **common communication language** built on standardized protocols. The internet is defined as a **“network of networks”**, connecting independent systems globally.
