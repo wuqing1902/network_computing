@@ -1,4 +1,4 @@
-# Module 16: Application Layer Services.md
+# Module 16: Application Layer Services
 
 ## Overview
 This module introduces **Application Layer services**, which enable users to access electronic documents, intranets, and the internet. It explains how protocols like FTP, DHCP, DNS, HTTP/HTTPS, and email operate behind the scenes to allow client-server interactions and manage data exchanges across networks.
