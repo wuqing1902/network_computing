@@ -35,6 +35,19 @@ A small business office has four PCs on a static IP network (192.168.1.0/24). On
 
 ---
 
+### Technical Insights & Steps
+1. **Verify configurations:**
+   - Accessed each PC’s Command Prompt
+   - Ran `ipconfig /all` to list IP configuration, subnet mask, default gateway, and DNS server
+   - Observed that **PC2** had IP address 192.168.10.X while the default gateway was 192.168.1.1.  
+     - **Insight:** The network portion of the IP does not match the gateway’s network. Even though the PC is physically connected, Layer 3 routing will fail because the PC thinks it is on a different subnet.
+
+2. **Correct misconfiguration:**
+   - Changed PC2 IP to 192.168.1.X, matching the subnet of the gateway and other PCs
+   - **Insight:** Correct subnet alignment ensures the PC can communicate with other hosts in the same network and reach the default gateway for external access.
+
+---
+
 ### Results / Findings
 - PC2 was misconfigured
 - Corrected IP configuration allowed the PC to communicate properly on the LAN and access the web server
@@ -75,6 +88,33 @@ After correcting IP misconfigurations, some PCs still cannot access www.cisco.pk
    - PC2: DNS = 191.15.2.5 (incorrect)
 6. Updated PC2’s DNS server configuration
 7. Verified connectivity to www.cisco.pka in the browser
+
+---
+
+### Technical Insights & Steps
+1. **Verify connectivity at application layer:**
+   - Attempted to access the web server using a browser → failed
+   - **Insight:** Failure could be due to DNS (name resolution) or connectivity (Layer 3/4)
+
+2. **Ping the web server using domain name:**
+   - PC2 → `ping www.cisco.pka`
+   - Result: `Ping request could not find host www.cisco.pka`
+   - **Insight:** ICMP test confirms the PC cannot resolve the domain → DNS problem
+
+3. **Ping the web server using IP address:**
+   - PC2 → `ping 192.15.2.10`
+   - Successful reply → indicates **network connectivity is intact**
+   - **Insight:** Confirms Layer 3/4 connectivity works; problem is DNS (Layer 7)
+
+4. **Compare DNS configurations:**
+   - Correct PCs: DNS = 192.15.2.5
+   - PC2: DNS = 191.15.2.5
+   - **Insight:** Incorrect DNS server causes domain name resolution to fail even if IP connectivity is correct
+
+5. **Correct DNS setting on PC2 and verify:**
+   - Updated DNS to 192.15.2.5
+   - Browser now successfully reaches `www.cisco.pka`
+   - **Insight:** Proper DNS configuration ensures resolution of domain names to IP addresses
 
 ---
 
