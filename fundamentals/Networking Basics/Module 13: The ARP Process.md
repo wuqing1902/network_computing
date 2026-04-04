@@ -7,51 +7,68 @@ This module explains **IP and MAC addresses**, their roles in network communicat
 
 ## Section 13.0: Introduction
 
-IP and MAC addresses serve distinct purposes:
+IP addresses indicate a device’s location on a network, while MAC addresses uniquely identify the physical hardware. This distinction is crucial for local and remote communication.
 
-- **IP Address:** Logical locator indicating a device’s network position  
-- **MAC Address:** Physical identifier unique to the hardware  
-- IP addresses can change depending on the network, whereas MAC addresses remain constant  
+### Key Concepts
+- IP address: Logical identifier for locating devices  
+- MAC address: Physical hardware identifier for final delivery  
+- IP allows routing; MAC ensures accurate local delivery  
+
+### Technical Insight
+MAC addresses remain static across networks, while IP addresses change depending on the network joined. ARP and Neighbor Discovery map IPs to MACs.
+
+### Real-World Applications
+- Device mobility in hospitals or offices  
+- Network troubleshooting using ARP tables  
+- Ensuring correct packet delivery in LANs  
 
 ### What I Learned
-IP addresses allow devices to join networks and facilitate routing, while MAC addresses ensure that data reaches the correct physical hardware. Understanding both is essential for accurate network communication.
+IP and MAC addresses work together for reliable communication, and understanding their interaction is key for troubleshooting.
 
 ---
 
 ## Section 13.1: MAC and IP
 
-### Addressing Schemes
-- **MAC Addresses:** Used for NIC-to-NIC communication on the same local segment  
-- **IP Addresses:** Enable end-to-end delivery across multiple networks  
+- Local delivery uses the destination MAC address of the target device  
+- Remote delivery uses the default gateway’s MAC address  
+- Routers de-encapsulate, route, and re-encapsulate frames, updating MAC addresses per hop  
 
-### Communication Process
-1. **Local Communication:** Destination MAC = target device’s MAC  
-2. **Remote Communication:** Source host sends frame to the **default gateway’s MAC** to exit the network  
-3. **Routing:** Routers de-encapsulate the IP packet, determine the path, and re-encapsulate with new Layer 2 MAC addresses for each hop  
+### Key Concepts
+- MAC: Layer 2 identifier  
+- IP: Layer 3 identifier for end-to-end routing  
+- ARP/ND maintain IP-to-MAC mappings  
 
-### Address Resolution
-- **ARP (IPv4):** Maps IP addresses to MAC addresses within a LAN  
-- **ICMPv6 Neighbor Discovery (IPv6):** Performs a similar role for IPv6 networks  
+### Technical Insight
+The combination of logical and physical addressing ensures seamless communication within and across networks.
+
+### Real-World Applications
+- Switches forwarding frames based on MAC tables  
+- Routers routing packets across multiple networks  
 
 ### What I Learned
-Understanding how logical and physical addresses interact is crucial for tracing traffic and diagnosing connectivity issues across networks.
+IP and MAC addresses are foundational for all network communications.
 
 ---
 
 ## Section 13.2: Broadcast Containment
 
-### Ethernet Broadcasts
-- Identified by MAC addresses of all Fs in hexadecimal  
-- Used when a message must reach all devices in a broadcast domain  
-- Switches flood the broadcast to all ports; routers **do not forward broadcasts**, preventing network-wide traffic overload  
+- Ethernet broadcasts use destination MAC of all Fs (hex)  
+- Switches flood broadcasts; routers block them to limit traffic  
+- ARP requests discover unknown MAC addresses on local networks  
 
-### ARP for Local Discovery
-- Hosts broadcast ARP requests to find unknown MAC addresses  
-- Matching device replies with its MAC, which is then stored in the ARP table  
-- Enables efficient future point-to-point communication  
+### Key Concepts
+- Broadcast domains: Managed by routers to prevent congestion  
+- ARP: Resolves IP to MAC mapping for direct communication  
+
+### Technical Insight
+Broadcast containment prevents network slowdowns and ensures efficient traffic delivery.
+
+### Real-World Applications
+- Office LANs using routers to isolate departments  
+- ARP used for device discovery and troubleshooting  
 
 ### What I Learned
-Routers enforce broadcast containment, preserving network performance. ARP bridges logical IP addresses with physical MAC addresses, ensuring correct delivery of data within a LAN.
+Controlling broadcast traffic is essential for maintaining high-performance and secure networks.
 
 ---
 
