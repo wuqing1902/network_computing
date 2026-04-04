@@ -67,6 +67,7 @@ NAT allows global internet connectivity without exposing internal IPs, enhancing
 
 ### What I Learned
 NAT is a cornerstone of modern networking, balancing connectivity, security, and address conservation.
+
 ---
 
 ## Practical Application
