@@ -59,6 +59,7 @@ IPv6 addresses use **128 bits** and are represented in **hexadecimal (base 16)**
 
 ### Example
 **Full IPv6:** 2001:0db8:0000:0000:0000:ff00:0042:8329
+
 **Compressed IPv6:** 2001:db8::ff00:42:8329
 
 ---
