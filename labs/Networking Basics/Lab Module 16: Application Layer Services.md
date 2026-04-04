@@ -1,4 +1,4 @@
-# Module 16: Application Layer Services
+# Lab Module 16: Application Layer Services
 
 ## Overview
 This module focuses on client-server interactions and common network services, including HTTP, DNS, FTP, Telnet, and SSH. Through multiple hands-on labs, it demonstrates how clients communicate with servers, how data is transferred, and how secure and insecure remote access methods function.
