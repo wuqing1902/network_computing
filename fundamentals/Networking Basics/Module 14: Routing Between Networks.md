@@ -1,4 +1,4 @@
-# Modle 14: Routing Between Networks
+# Module 14: Routing Between Networks
 
 ## Overview
 This module explores the concept of **network congestion**, the need for routing, and the design of Local Area Networks (LANs). It explains how routers determine the best paths for data, manage traffic, and optimize network performance.
